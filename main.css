@@ -1,0 +1,66 @@
+body {
+background-color:darkgrey
+}
+
+th {
+color: yellow;
+}
+
+td:hover {
+color: red;
+}
+
+table {
+    margin: 2px;
+  overflow: hidden;
+  border-collapse:collapse;
+  text-align:center;
+	  padding: 8px;
+  position: relative;
+  outline: 1px;
+    border: 2px solid;
+   max-width:1500px;
+    min-width:600px;
+        width: 80%;
+    background-color: ;
+}
+td, th {
+  padding: 10px;
+  position: relative;
+  outline: 0;
+}
+
+body:not(.nohover) tbody tr:hover {
+  background-color:azure;
+}
+
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after { 
+  content: '';  
+  height: 10000px;
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+td:hover::after,
+th:hover::after {
+  background-color:antiquewhite;
+}
+
+caption {
+    background-color:bisque;
+    font-size: 2em;
+    text-align: center;
+    color; red;
+}
+/* caption hover just for fun and designinging purposes.*/
+caption:hover {
+/*background-color: yellow;*/
+    color: red;
+}
